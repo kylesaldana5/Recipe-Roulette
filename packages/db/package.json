@@ -1,0 +1,22 @@
+{
+  "name": "@recipe-roulette/db",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Database schema, client, and utilities for Recipe Roulette",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsc --build --watch",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .tsbuildinfo"
+  },
+  "dependencies": {
+    "@recipe-roulette/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "5.3.3"
+  }
+}
