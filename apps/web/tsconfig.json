@@ -1,0 +1,35 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@recipe-roulette/shared": ["../../packages/shared/src"],
+      "@recipe-roulette/shared/*": ["../../packages/shared/src/*"],
+      "@recipe-roulette/ui": ["../../packages/ui/src"],
+      "@recipe-roulette/ui/*": ["../../packages/ui/src/*"],
+      "@recipe-roulette/db": ["../../packages/db/src"],
+      "@recipe-roulette/db/*": ["../../packages/db/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "dist"
+  ]
+}
