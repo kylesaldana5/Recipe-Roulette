@@ -166,7 +166,7 @@ Edit `.mcp.json` to add or modify MCP servers. Current configuration includes:
   "mcpServers": {
     "serena": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/oraios/serena", "serena-mcp-server", "--context", "ide-assistant", "--project", "{{PROJECT_SLUG}}"]
+      "args": ["--from", "git+https://github.com/oraios/serena", "serena-mcp-server", "--context", "ide-assistant", "--project", "my-awesome-project"]
     },
     "context7": {
       "command": "npx",

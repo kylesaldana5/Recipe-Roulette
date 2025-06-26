@@ -17,6 +17,20 @@ build/
 *.tgz
 *.tar.gz
 
+# Next.js
+/.next/
+/out/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Package manager
+.pnpm-debug.log*
+
+# Vercel
+.vercel
+
 # Runtime data
 pids
 *.pid

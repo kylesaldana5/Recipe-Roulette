@@ -1,0 +1,93 @@
+# {{PROJECT_NAME}}
+
+This is a development project for {{PROJECT_NAME}}, bootstrapped using the project kickstart template.
+
+## Project Overview
+
+**Project Name:** {{PROJECT_NAME}}  
+**Created:** {{CURRENT_DATE}}  
+**Status:** In Development
+
+## Available Commands
+
+This project includes automated development workflows via Claude Code:
+
+### Bootstrap Command
+```bash
+/bootstrap
+```
+Converts PRD and Technical Architecture documents into a comprehensive GitHub issue backlog.
+
+### Work Command  
+```bash
+/work
+```
+Automated implementation of GitHub issues with full Git workflow (branch creation, commits, PR creation).
+
+### Review Command
+```bash
+/review
+```
+Comprehensive automated code review of GitHub pull requests.
+
+### Issues Command
+```bash
+/issues
+```
+Creates individual GitHub issues from feature descriptions.
+
+## Development Workflow
+
+1. **Planning Phase:** Use PRD and Technical Architecture documents
+2. **Issue Creation:** Run bootstrap command to create GitHub issues
+3. **Implementation:** Use work command to implement issues systematically  
+4. **Code Review:** Use review command for thorough PR analysis
+5. **Iteration:** Repeat work/review cycle
+
+## Project Structure
+
+```
+{{PROJECT_SLUG}}/
+├── .claude/
+│   └── commands/      # Automation commands for development workflow
+├── .github/           # GitHub templates and workflows
+├── .mcp.json         # Model Context Protocol server configurations
+├── docs/
+│   ├── PRD.md         # Product Requirements Document
+│   └── TechnicalArchitecture.md  # Technical Architecture Document
+└── CLAUDE.md          # This file - project context for Claude Code
+```
+
+## MCP Integrations
+
+This project is configured with two MCP servers for enhanced AI capabilities:
+
+- **Serena IDE Assistant:** Intelligent code completion, analysis, and project-aware development assistance
+- **Context7 Documentation:** Access to comprehensive library documentation and smart library resolution
+
+Both MCP servers are automatically configured in `.mcp.json`. Serena requires `uvx` package manager, while Context7 requires Node.js ≥ v18.0.0.
+
+## Best Practices
+
+- Always run bootstrap command after updating PRD or Technical Architecture
+- Use work command for systematic issue implementation
+- Run review command on all PRs before merging
+- Keep CLAUDE.md updated with project evolution
+- Document any project-specific conventions or requirements below
+
+## Project-Specific Notes
+
+Add any project-specific information, conventions, or requirements here:
+
+- Development server: `npm run dev`
+- Testing: `npm run test`
+- Build: `npm run build`
+- Deployment: [Add deployment instructions]
+
+## Links
+
+- [GitHub Repository](https://github.com/{{github_username}}/{{PROJECT_SLUG}})
+- [Project Documentation](./docs/)
+- [PRD Document](./docs/PRD.md)
+- [Technical Architecture](./docs/TechnicalArchitecture.md)
+- [Frontend Specification](./docs/front-end-spec.md)
