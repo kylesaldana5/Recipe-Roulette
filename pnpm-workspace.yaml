@@ -1,0 +1,11 @@
+# pnpm workspace configuration for Recipe Roulette monorepo
+packages:
+  # Applications
+  - 'apps/*'
+  
+  # Shared packages
+  - 'packages/*'
+  
+# Exclude patterns (if needed)
+# - '!**/test/**'
+# - '!**/.next/**'
