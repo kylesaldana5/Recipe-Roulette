@@ -1,0 +1,4 @@
+name: Recipe Roulette
+language: typescript
+framework: nextjs
+description: A gamified cooking application that helps users discover recipes based on available ingredients
