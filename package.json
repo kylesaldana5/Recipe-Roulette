@@ -1,0 +1,35 @@
+{
+  "name": "recipe-roulette",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A gamified cooking application that helps users discover recipes based on available ingredients",
+  "keywords": ["recipe", "cooking", "gamification", "nextjs", "typescript", "t3-stack"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kylesaldana5/Recipe-Roulette.git"
+  },
+  "author": "Kyle Saldana",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --recursive build",
+    "test": "pnpm --recursive test",
+    "lint": "pnpm --recursive lint",
+    "type-check": "pnpm --recursive type-check",
+    "clean": "pnpm --recursive clean",
+    "install:all": "pnpm install --frozen-lockfile"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "@types/node": "^20.11.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.1"
+}
