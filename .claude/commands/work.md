@@ -51,7 +51,7 @@ Follow these steps to complete the issue implementation:
   - Java: `**/*.java`
   - Ruby: `**/*.rb`
   - PHP: `**/*.php`
-- Read key project files (README, main config files) to understand architecture
+- Read key project files (README, Docs, main config files) to understand architecture
 
 ### 1.7. Validate current project state:
 
